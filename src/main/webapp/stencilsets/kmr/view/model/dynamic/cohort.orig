@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="82"
+   height="82"
+   version="1.0">
+  <defs></defs>
+	<g pointer-events="fill" >
+                <defs>
+			<radialGradient id="background" cx="0%" cy="0%" r="50%" fx="0%" fy="0%">
+				<stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+                                <stop id="fill_el" offset="50%" stop-color="#ccccff" stop-opacity="1"/>
+			</radialGradient>
+		</defs>
+		
+		<polygon points="0,27.33 27.33,0 54.66,0 82,27.33 82,54.66 54.66,82 27.33,82 0,54.66" fill="#f3edd3" stroke="black" stroke-width="2" oryx:resize="horizontal vertical"/>
+		
+		<rect id="unvisibleBorder" x="0" y="0" height="82" width="82" stroke="none" fill="none" oryx:resize="horizontal vertical"/>
+		
+		<text font-size="12" x="41" y="41" id="name" oryx:align="middle center" oryx:fittoelem="unvisibleBorder" stroke="black"></text>		
+                
+                $cohortDefs:{ch| 
+                    <g id="$ch.name$" display="none">
+                        <image oryx:anchors="top" x="31" y="2" width="20" height="20" xlink:href="$ch.iconSource$" />
+                    </g>    
+                }$
+	</g>
+</svg>
