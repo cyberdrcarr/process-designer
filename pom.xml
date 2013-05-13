@@ -8,8 +8,8 @@
   
   <properties>
     <mvel.version>2.1.0.drools4</mvel.version>
-    <drools.version>5.5.1-SNAPSHOT</drools.version>
-    <jbpm.version>5.4.1-SG</jbpm.version>
+    <drools.version>5.6.0-SG</drools.version>
+    <jbpm.version>5.6.0-SG</jbpm.version>
     <batik.version>1.6-1</batik.version>
   </properties>
 
