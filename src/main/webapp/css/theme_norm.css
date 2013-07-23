@@ -87,6 +87,7 @@ table-layout:fixed;
 }
 
 #oryx_editor_header {
+       display: none;
        background-image: url('../images/header_bg.small.gif');
        background-position: top center;
        background-repeat: repeat-x;

@@ -361,7 +361,7 @@ ORYX.Editor = {
 				user 	= 	publicText;
 			}
 			
-			var content = 	"<div id='oryx_editor_header'>" +
+			var content = 	"<div id='oryx_editor_header' style='display:none'>" +
 								"<a href=\""+ORYX.CONFIG.WEB_URL+"\" target=\"_blank\">" +
 									"<img src='"+ORYX.PATH+"images/oryx.small.gif' border=\"0\" />" + 
 								"</a>" + 
