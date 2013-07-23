@@ -4,6 +4,7 @@
  */
 package org.jbpm.designer.web.preprocessing.impl;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.HashSet;
@@ -13,6 +14,7 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.protocol.client.ClientResponse;
+import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 
 /**
@@ -33,10 +35,10 @@ public class GuvnorAtomHelper {
             throw new IllegalArgumentException("Working Set Entry doesn't have any binary URL");
         }
         
-        try {
-            binaryURL = URLDecoder.decode(binaryURL, "UTF-8");
-        } catch (UnsupportedEncodingException ex) {
-        }
+//        try {
+//            binaryURL = URLDecoder.decode(binaryURL, "UTF-8");
+//        } catch (UnsupportedEncodingException ex) {
+//        }
 
         ClientResponse resp = null;
 

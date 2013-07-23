@@ -6,15 +6,12 @@ package org.jbpm.designer.web.preprocessing.impl;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.logging.Level;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
 import org.apache.abdera.model.Document;
@@ -117,10 +114,7 @@ public class CohortPreprocessor {
         
         List<String> factTypesDescriptorsSourceURLs = new ArrayList<String>();
         for (Entry entry : document.getRoot().getEntries()) {
-            try {
-                factTypesDescriptorsSourceURLs.add(URLDecoder.decode(entry.getContentSrc().toString(), "UTF-8"));
-            } catch (UnsupportedEncodingException ex) {
-            }
+            factTypesDescriptorsSourceURLs.add(entry.getContentSrc().toString());
         }
         
         return factTypesDescriptorsSourceURLs;
